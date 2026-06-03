@@ -1,5 +1,5 @@
-import StudentTable from "../features/student/components/StudentTable";
+import HomeComponent from "../features/home/component/Home";
 
-export default function StudentPage() {
-  return <StudentTable />;
+export default function HomePage() {
+  return <HomeComponent />;
 }

@@ -1,0 +1,48 @@
+.wrapContent {
+    margin-top: 200px;
+    /* background-color:#EBF1F5 ; */
+    width: 100%;
+}
+
+.wrapHeader {
+    width: 100%;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header {
+    width: 90%;
+    height: 90%;
+    background-color: #EBF1F5;
+    border-radius: 10px;
+    /* padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px; */
+    padding: 30px;
+    position: relative;
+}
+
+.option {
+    color: white;
+    display: flex;
+    justify-content: center;
+    background-color: #1B2E66;
+}
+
+.textIcon {
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
+    display: flex;
+    justify-content: center;
+    height: 60px;
+    align-items: center;
+}
+
+.buttonSOI {
+    position: absolute;
+    bottom: 20px;
+    /* background-color: aqua; */
+}

@@ -17,7 +17,7 @@ export default function StudentTable() {
   if (loading) return <CircularProgress />;
 
   return (
-    <Paper sx={{ p: 2 }}>
+    <Paper>
       <Table>
         <TableHead>
           <TableRow>
