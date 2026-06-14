@@ -1,4 +1,4 @@
-import { Link, Outlet } from "react-router-dom";
+import { Link, Outlet, useLocation } from "react-router-dom";
 import {
   AppBar,
   Box,
@@ -13,10 +13,19 @@ import {
 } from "@mui/material";
 import { ROUTES } from "../routes/routePaths";
 import styles from './MainLayout.module.css'
+import { useMemo } from "react";
 const drawerWidth = 240;
 
 
 export default function MainLayout() {
+  const location = useLocation();
+
+  const linkRoute = useMemo(() => {
+    const lastRoute = location.pathname.split("/").pop();
+    console.log(lastRoute);
+    return lastRoute;
+  }, [location.pathname]);
+
   return (
     <Box sx={{ display: "flex" }}>
       {/* Header */}
@@ -26,11 +35,11 @@ export default function MainLayout() {
           width: `calc(100% - ${drawerWidth}px)`,
           ml: `${drawerWidth}px`,
           color: "black",
-          backgroundColor: "white",
-          boxShadow: "none"
+          backgroundColor: "#EBF1F5",
+          boxShadow: "none",
         }}
       >
-        <Grid className={styles.wrapHeader}>
+        {/* <Grid className={styles.wrapHeader}>
           <Grid className={styles.header}>
             <TextField
               multiline
@@ -63,7 +72,7 @@ export default function MainLayout() {
                 },
               }}>SOI</Button>
           </Grid>
-        </Grid>
+        </Grid> */}
       </AppBar>
 
       {/* Sidebar */}
@@ -95,11 +104,11 @@ export default function MainLayout() {
 
         <List>
           <ListItemButton component={Link} to={ROUTES.HOME}>
-            <ListItemText className={styles.option} primary="Soi tin" />
+            {ROUTES.HOME === linkRoute ? <ListItemText className={styles.optionOpen} primary="Soi tin" /> : <ListItemText className={styles.option} primary="Soi tin" />}
           </ListItemButton>
 
-          <ListItemButton component={Link} to={ROUTES.STUDENTS}>
-            <ListItemText className={styles.option} primary="Hỗ trợ" />
+          <ListItemButton component={Link} to={ROUTES.TTDUAN}>
+            {ROUTES.TTDUAN === linkRoute ? <ListItemText className={styles.optionOpen} primary="TT - Dự án" /> : <ListItemText className={styles.option} primary="TT - Dự án" />}
           </ListItemButton>
         </List>
       </Drawer>
