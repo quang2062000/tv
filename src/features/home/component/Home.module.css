@@ -1,7 +1,68 @@
 .container {
+  width: 100%;
   display: flex;
-  flex-direction: column;
-  gap: 16px;
-  height: 100px;
-  width: 100px;
+  justify-content: space-around;
+  height: 100vh;
+  background-color:#EBF1F5 ;
+  align-items: center;
+}
+.tab1 {
+  width: 46%;
+  height: 96%;
+  background-color: white;
+  border-radius: 16px;
+
+}
+.tab2{
+  width: 46%;
+  height: 96%;
+  background-color: white;
+  border-radius: 16px;
+}
+
+.buttonSOI {
+  display: flex;
+  justify-content: center;
+}
+.title1{
+  height: 20%;
+  display: flex;
+  justify-content: center;
+  padding-top: 20px;
+  font-size: 20px;
+  font-weight: bold;
+}
+.wrapButton{
+  display: flex;
+  justify-content: space-around;
+  background-color: #afcadc;align-items: center;
+  border-radius: 16px;
+  margin: 0 20px;
+  padding: 10px;
+}
+
+.buttonOpen{
+  background-color: #EBF1F5;
+  width: 50%;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 16px;
+}
+
+.button:hover{
+cursor: pointer;
+}
+
+.button{
+  width: 50%;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 16px;
+}
+.contentOption{
+  height: 70%;
 }

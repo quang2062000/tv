@@ -1,7 +1,6 @@
 .wrapContent {
-    margin-top: 200px;
-    /* background-color:#EBF1F5 ; */
     width: 100%;
+    /* background-color: #EBF1F5; */
 }
 
 .wrapHeader {
@@ -13,7 +12,7 @@
 }
 
 .header {
-    width: 90%;
+    width: 98%;
     height: 90%;
     background-color: #EBF1F5;
     border-radius: 10px;
@@ -29,6 +28,20 @@
     display: flex;
     justify-content: center;
     background-color: #1B2E66;
+    padding: 10px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.optionOpen {
+    color: rgb(36, 34, 34);
+    display: flex;
+    justify-content: center;
+    background-color: #e0e2e8;
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 20px;
+    font-weight: bold;
 }
 
 .textIcon {

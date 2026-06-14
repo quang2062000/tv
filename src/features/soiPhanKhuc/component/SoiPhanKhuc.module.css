@@ -1,0 +1,106 @@
+.container {
+    height: auto;
+    width: 100%;
+    background-color: #EBF1F5;
+    padding: 20px;
+}
+
+.content1 {
+    width: 100%;
+    height: 150px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.content2 {
+    width: 100%;
+    height: 60px;
+    background-color: white;
+    margin-top: 16px;
+    font-size: 24px;
+    font-weight: bold;
+    color: rgb(68, 63, 63);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 16px;
+    border-radius: 12px;
+}
+
+.content3 {
+    width: 100%;
+    height: 520px;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.boxData {
+    width: 22%;
+    height: 100%;
+    background-color: white;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    color: rgb(68, 63, 63);
+}
+
+.titleBox {
+    font-size: 18px;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+}
+
+.dataBox {
+    font-size: 26px;
+    display: flex;
+    justify-content: center;
+}
+
+.dataBox2 {
+    font-size: 14px;
+    display: flex;
+    justify-content: center;
+}
+
+.dulieutin {
+    height: 100%;
+    width: 49%;
+    background-color: white;
+    border-radius: 12px;
+}
+
+.phanbo{
+    height: 100%;
+    width: 49%;
+    background-color: white;
+    border-radius: 12px;
+}
+
+.titleContent3{
+    font-size: 24px;
+    font-weight: 600;
+    height: 50px;
+    background-color: #CBD5F4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+    color: rgb(32, 30, 30);
+}
+
+.xemthem {
+    display: flex;
+    justify-content: right;
+    padding-right: 20px;
+    text-decoration: underline;
+    margin-top: 10px;
+}
+
+.xemthem:hover {
+    cursor: pointer;
+
+}
